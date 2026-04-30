@@ -1,0 +1,45 @@
+CREATE TABLE IF NOT EXISTS runs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  company TEXT NOT NULL,
+  role TEXT NOT NULL,
+  url TEXT,
+  run_path TEXT NOT NULL UNIQUE,
+  status TEXT NOT NULL DEFAULT 'analyzed',
+  score REAL
+);
+
+CREATE TABLE IF NOT EXISTS job_requirements (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  run_id INTEGER NOT NULL REFERENCES runs(id) ON DELETE CASCADE,
+  kind TEXT NOT NULL,
+  requirement TEXT NOT NULL,
+  priority TEXT NOT NULL DEFAULT 'unknown'
+);
+
+CREATE TABLE IF NOT EXISTS resume_matches (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  run_id INTEGER NOT NULL REFERENCES runs(id) ON DELETE CASCADE,
+  requirement_id INTEGER REFERENCES job_requirements(id) ON DELETE SET NULL,
+  evidence TEXT NOT NULL,
+  confidence REAL NOT NULL DEFAULT 0.5
+);
+
+CREATE TABLE IF NOT EXISTS gaps (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  run_id INTEGER NOT NULL REFERENCES runs(id) ON DELETE CASCADE,
+  requirement TEXT NOT NULL,
+  severity TEXT NOT NULL,
+  adjacent_evidence TEXT,
+  mitigation TEXT,
+  do_not_claim TEXT
+);
+
+CREATE TABLE IF NOT EXISTS artifacts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  run_id INTEGER NOT NULL REFERENCES runs(id) ON DELETE CASCADE,
+  kind TEXT NOT NULL,
+  path TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
