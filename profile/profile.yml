@@ -1,0 +1,17 @@
+name: ""
+email: ""
+phone: ""
+location: ""
+timezone: ""
+linkedin: ""
+portfolio: ""
+target_roles: []
+salary_target: ""
+work_authorization: ""
+preferences:
+  remote: ""
+  locations: []
+  industries: []
+  deal_breakers: []
+writing:
+  tone: "direct, specific, warm, no fluff"

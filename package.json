@@ -1,0 +1,28 @@
+{
+  "name": "jobfit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "init-db": "tsx scripts/init-db.ts",
+    "crawl": "tsx scripts/crawl-job.ts",
+    "create-run": "tsx scripts/create-run.ts",
+    "inspect-docx": "tsx scripts/inspect-docx.ts",
+    "create-docx": "tsx scripts/create-docx.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.30",
+    "better-sqlite3": "^9.4.3",
+    "docx": "^8.5.0",
+    "mammoth": "^1.7.1",
+    "playwright": "^1.42.1",
+    "slugify": "^1.6.6",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3",
+    "yaml": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13"
+  }
+}
