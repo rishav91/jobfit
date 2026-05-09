@@ -11,22 +11,24 @@ Principal Developer and Tech Lead with 10+ years architecting and building high-
 | **Languages** | TypeScript, Python |
 | **Backend** | Node.js, Express, tRPC, Django, FastAPI, Firebase, MongoDB, PostgreSQL, Snowflake |
 | **Mobile & Frontend** | React Native, Expo/EAS, iOS/Android, Redux, Zustand, React Query |
-| **Infra & Delivery** | GitHub CI/CD, AWS, GCP, Containerization |
+| **Infra & Delivery** | GitHub CI/CD, AWS, GCP, Google Cloud Pub/Sub, Containerization |
 | **Domain Integrations** | Stripe, HubSpot, Scheduling/Booking Platform integrations, MQTT, BLE, AirPlay |
 
 **EXPERIENCE**
 
 **Principal Developer / Tech Lead**  ·  PinnacleCode Solutions (Client: TOCA Football, USA)                                                                   *Jan 2023 – Present*
 
-* Led a cross-functional India team of 6 engineers delivering a sports-tech platform spanning player, trainer, kiosk, and admin experiences across 25+ physical studios.
+* Led a cross-functional India team of 6 engineers delivering a sports-tech platform spanning player, trainer, kiosk, and admin experiences across 25+ physical studios servicing ~8K active players.
+
+* Integrated Stripe for end-to-end session payments processing ~$360K/month (~14k transactions/month); integrated MBO and HubSpot for booking/scheduling and CRM workflows.
 
 * Re-architected training session communication from a Dedicated Studio PC-based MQTT/BLE gateway to direct BLE on iPad, eliminating a costly per-studio hardware dependency while reducing session interruptions by 34%, failures by 18%, and session load time by 10%.
 
 * Delivered full offline capability for the trainer app with schedule caching, async post-session upload, and on-device authentication, enabling reliable operation in near-zero-connectivity environments.
 
-* Replaced FullStory with a lightweight custom observability service, eliminating approximately $6k/month in analytics spend while retaining product observability.
+* Architected a shared Google Cloud Pub/Sub backplane across player and admin experiences delivering real-time booking updates — ~550 peak concurrent WebSocket connections catering to ~1,200 bookings/day.
 
-* Integrated Stripe, MBO, and HubSpot to support end-to-end booking and payments across 25+ studios.
+* Replaced FullStory with a lightweight custom observability service, eliminating approximately $6k/month in analytics spend while retaining product observability.
 
 **Associate Manager / Senior Software Developer**  ·  UNIRAC, Inc       Hyderabad                                                                                *Nov 2019 – Dec 2022*
 

@@ -5,7 +5,6 @@ data/*.sqlite-*
 applications/*
 !applications/.gitkeep
 tmp/
-profile/resume.md
 profile/resume.docx
 profile/resume-template.docx
 .DS_Store
