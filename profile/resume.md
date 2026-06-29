@@ -1,70 +1,61 @@
 **RISHAV RAUSHAN**
 
-+91-8340411359  |  [rraushan.com](http://rraushan.com)  |  [rishav.raushan@gmail.com](mailto:rishav.raushan@gmail.com)  |  [linkedin.com/in/rishavrau](https://www.linkedin.com/in/rishavrau)  |  [github.com/rishav91](https://github.com/rishav91)
+\+91-8340411359  |  [rraushan.com](http://rraushan.com)  |  [rishav.raushan@gmail.com](mailto:rishav.raushan@gmail.com)  |  [linkedin.com/in/rishavrau](https://www.linkedin.com/in/rishavrau)  |  [github.com/rishav91](https://github.com/rishav91)
 
-Principal Developer and Tech Lead with 10+ years architecting and building high-performance native mobile, backend, and platform systems. Deep expertise in third-party CRM, Payment, PoS integrations and production IoT/BLE communication workflows. Track record of leading cross-functional teams, engaging international stakeholders, and owning products end-to-end from idea to delivery. Building an AI platform that surfaces actionable SDLC insights, grounded in Github activity, Linear tickets and Slack chat.
+Principal Developer and Tech Lead with 10+ years of experience architecting high-performance distributed systems. Proven ability to lead company-wide initiatives, define technical standards, and deliver fault-tolerant, production-grade systems end-to-end. Experienced in leading cross-functional teams, collaborating with international stakeholders, and owning products from concept to delivery. Currently building an AI-native developer intelligence platform. 
 
 **SKILLS**
 
-| :---- | :---- |
-| **Architecture & Platform** | System Design, API design & versioning, Event-driven design, Distributed task queues, Caching, Platform reliability |
-| **Languages** | TypeScript, Python |
-| **Backend** | Node.js, Express, tRPC, Django, FastAPI, Firebase, MongoDB, PostgreSQL, Snowflake |
-| **Mobile & Frontend** | React Native, Expo/EAS, iOS/Android, Redux, Zustand, React Query |
-| **Infra & Delivery** | GitHub CI/CD, AWS, GCP, Google Cloud Pub/Sub, Containerization |
-| **Domain Integrations** | Stripe, HubSpot, Scheduling/Booking Platform integrations, MQTT, BLE, AirPlay |
+**Languages:** TypeScript, Python, Java
+
+**Backend:** gRPC, NodeJS, Fastify, tRPC, Django, PostgreSQL, DynamoDB, MongoDB, Kafka, Redis
+
+**Architecture:** Microservices, Event-driven design, Pub/Sub, Fault-tolerant Systems, Event Sourcing
+
+**Frontend:** React, Redux, Zustand, TanStack Query
+
+**Infra & Delivery:** AWS, GCP, GitHub Actions, Docker, Kubernetes, Prometheus, OpenTelemetry
+
+**Applied AI:** Agentic Workflows, RAG, LangGraph, Tool Use, Structured Outputs, Eval Harnesses
 
 **EXPERIENCE**
 
-**Principal Developer / Tech Lead**  ·  PinnacleCode Solutions (Client: TOCA Football, USA)                                                                   *Jan 2023 – Present*
+**Principal Developer / Tech Lead**  | PinnacleCode Solutions, Hyderabad (Client: TOCA Football, USA)  |  *Jan 2023 – Apr 2026*
 
-* Led a cross-functional India team of 6 engineers delivering a sports-tech platform spanning player, trainer, kiosk, and admin experiences across 25+ physical studios servicing ~8K active players.
-
-* Integrated Stripe for end-to-end session payments processing ~$360K/month (~14k transactions/month); integrated MBO and HubSpot for booking/scheduling and CRM workflows.
-
-* Re-architected training session communication from a Dedicated Studio PC-based MQTT/BLE gateway to direct BLE on iPad, eliminating a costly per-studio hardware dependency while reducing session interruptions by 34%, failures by 18%, and session load time by 10%.
-
-* Delivered full offline capability for the trainer app with schedule caching, async post-session upload, and on-device authentication, enabling reliable operation in near-zero-connectivity environments.
-
-* Architected a shared Google Cloud Pub/Sub backplane across player and admin experiences delivering real-time booking updates — ~550 peak concurrent WebSocket connections catering to ~1,200 bookings/day.
-
+* Led a cross-functional India team of 6 engineers delivering a sports-tech platform spanning player, trainer, kiosk, and admin experiences across 25+ physical studios powering  \~1,200 bookings/day and serving \~6K DAU.  
+* Engineered a high-integrity payment layer via Stripe managing $4.3M+ in annualized revenue (\~14k transactions/mo); integrated MBO and HubSpot for booking/scheduling and CRM workflows.  
+* Re-architected training session communication from a Dedicated Studio PC-based MQTT/BLE gateway to direct BLE on iPad, eliminating a single point of failure while reducing session failures by 18%, delays by 34% and session load time by 60%.  
+* Delivered full offline capability for the trainer app with schedule caching, async post-session upload, and on-device authentication, enabling reliable operation in near-zero-connectivity environments.  
+* Built a shared Google Cloud Pub/Sub backplane across player and admin experiences delivering real-time booking updates with \~550 peak concurrent WebSocket connections.  
 * Replaced FullStory with a lightweight custom observability service, eliminating approximately $6k/month in analytics spend while retaining product observability.
 
-**Associate Manager / Senior Software Developer**  ·  UNIRAC, Inc       Hyderabad                                                                                *Nov 2019 – Dec 2022*
+**Associate Manager / Senior Software Developer**  |  UNIRAC, Hyderabad  |  *Nov 2019 – Dec 2022*
 
-* Led technical delivery for UBuilder, a customer-facing solar design, estimation, and proposal platform used by 500+ customers across design, BOM, cost estimation, proposal, and engineering review workflows.
-
-* Automated project design, BOM generation, cost estimation, AutoCAD import/export and proposal workflows, reducing design-to-proposal cycle time by about 8 days.
-
-* Standardized engineering rules, product constraints, and pricing logic across 15+ racking/configuration scenarios, improving quote consistency and reducing manual engineering review for standard projects.
-
-* Partnered with US product, sales, and engineering stakeholders to translate solar racking requirements into scalable customer workflows supporting ~90 project designs/proposals per month.
-
+* Led technical delivery for UBuilder, a customer-facing solar design, estimation, and proposal platform used by 500+ customers; automated project design/import/export, BOM generation, cost estimation, proposal and engineering review workflows, reducing design-to-proposal cycle time by \~8 days.  
+* Standardized engineering rules, product constraints, and pricing logic across 15+ racking/configuration scenarios, improving quote consistency and reducing manual engineering review for standard projects.  
+* Partnered with US product, sales, and engineering stakeholders to translate solar racking requirements into scalable customer workflows supporting \~90 project designs/proposals per month.  
 * Scaled the India engineering team from 3 to 10 developers while establishing onboarding, code review, delivery planning, and technical ownership practices.
 
+**Senior Software Developer**  |  BrightWhite Innovations, Kolkata  |  *Jan 2018 – Nov 2019*
 
-**EARLY CAREER**
+* Engineered a secure, auditable repository for competitive bidding; implemented state-machine logic to manage complex multi-round RFP lifecycles, vendor clarifications, and immutable audit trails for private-sector procurement.
 
-**SDE2 / SDE / SDE Intern**  ·  BrightWhite Innovations · Amdocs · NestAway                                                                                          *Jan 2015 – Nov 2019*
+**Software Developer**  |  Amdocs, Pune  |  *Aug 2015 – Dec 2017*
 
-Built production applications across mobile, frontend, and backend stacks for B2B services, telecom ecommerce, and home rental solutions.
+* Architected an async ingestion pipeline to sync complex telecom bundling rules, promotional constraints and regional tax logic from CRM into a relational DB and expose them for e-commerce checkout flows.
 
-**AI PROJECT**
+**Software Engineer Intern**  |  NestAway, Bangalore  |  *Jan 2015 – June 2015*
 
-**Dev Intelligence Platform**                                                                                                                         	  
+* Developed a lightweight Settlement Reconciliation service that used background workers to scan daily bank settlements against our internal financial ledgers, flagging payment mismatches or double-charges.
 
-* Building a dev intelligence platform that analyzes Github PRs, Linear tickets, and Slack context to detect delivery divergence, recurring blockers, and bottleneck signals.
+**AI/ML PROJECT**
 
-* Designed a four-stage workflow that combines deterministic gating with LLM reasoning and synthesis.
+**Dev Intelligence Platform**
 
-* Used RAG to ground model outputs in recent team history for severity calibration and recurrence detection.
-
-* Implemented structured JSON outputs and confidence gates so uncertain cases degrade safely to insufficient-evidence results.
-
-* Built an evaluation harness with gold-label scenarios and quality metrics for blocker accuracy, owner precision, and severity calibration.
+* Building a multi-tenant developer-intelligence platform that ingests GitHub activity to surface PR bottlenecks, review health, CI flakiness, and blockers on an event-driven CQRS stack (Go, Python, Kafka, Flink, Postgres/Citus, ClickHouse).
+* Each technique earns its place: GenAI reasons over language to summarize and narrate; classical ML (LightGBM, HDBSCAN) handles classification, clustering, and linking where it beats heuristics; and deterministic/statistical methods compute the DORA metrics.
+* Source-agnostic architecture, so more sources (Notion, Linear, Slack) can be added later.
 
 **EDUCATION**
 
-**Indian Institute of Information Technology, Allahabad**	*2011 – 2015*
-
-B.Tech., Information Technology
+**Indian Institute of Information Technology, Allahabad**  |  **B.Tech., IT**  |  *2011 – 2015*
