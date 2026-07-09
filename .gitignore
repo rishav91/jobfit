@@ -7,4 +7,5 @@ applications/*
 tmp/
 profile/resume.docx
 profile/resume-template.docx
+profile/resume_archive/
 .DS_Store
