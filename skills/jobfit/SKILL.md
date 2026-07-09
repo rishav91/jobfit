@@ -22,7 +22,7 @@ Interpret `{{request}}` as natural language.
 
 Always read:
 - `AGENTS.md`
-- `profile/resume.md` if present
+- `profile/resume-variants.md` if present (resolve the specific resume variant to use per mode below)
 - `profile/profile.yml` if present
 
 For analyze:

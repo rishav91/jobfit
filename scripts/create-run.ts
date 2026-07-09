@@ -22,7 +22,8 @@ const metadata = {
   company: companyArg,
   role: roleArg,
   created_at: new Date().toISOString(),
-  status: "created"
+  status: "created",
+  resume_variant: null
 };
 
 fs.writeFileSync(path.join(runPath, "metadata.json"), JSON.stringify(metadata, null, 2) + "\n");

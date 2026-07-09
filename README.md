@@ -8,7 +8,7 @@ You talk to Codex/Claude in normal language:
 Analyze this job: https://company.com/jobs/example
 ```
 
-The agent crawls the listing, compares it with your resume, scores fit, explains matches and gaps, then waits for your review before drafting a tailored resume or cover letter.
+The agent crawls the listing, proposes which resume variant best fits the role (waiting for your confirmation), compares it with your resume, scores fit, explains matches and gaps, then waits for your review before drafting a tailored resume or cover letter.
 
 Claude Code can also use slash commands:
 
@@ -37,7 +37,7 @@ jobfit/
 
 ## First Setup
 
-1. Put your factual resume in `profile/resume.md`.
+1. Put one or more factual resume variants in `profile/resume-<focus>.md` (e.g. `resume-backend.md`, `resume-applied-ai.md`) — same underlying facts, different framing per role focus. Register each in `profile/resume-variants.md`.
 2. Export your Google Docs/Word resume as `profile/resume-template.docx` or `profile/resume.docx`.
 3. Fill `profile/profile.yml`.
 4. Run `npm install` when ready to execute helper scripts.

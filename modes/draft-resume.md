@@ -4,7 +4,7 @@ Generate a tailored resume draft only after the user asks.
 
 ## Inputs
 
-- `profile/resume.md`
+- The resume variant recorded in the run's `metadata.json` under `resume_variant`. If missing (e.g. run predates variant support), read `profile/resume-variants.md`, propose the closest variant given the run's `analysis/extracted-job.json`, and confirm with the user before proceeding — then write the choice back to `metadata.json`.
 - `profile/resume-template.docx` or `profile/resume.docx`
 - run folder analysis files
 - user's choice of version: styled, ATS-compliant, or both (collected at analyze stop point)

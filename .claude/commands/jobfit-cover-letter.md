@@ -15,6 +15,6 @@ Draft a cover letter for the latest or specified run.
 2. Read `modes/draft-cover-letter.md`.
 3. Confirm the user wants a cover letter if that confirmation has not already happened.
 4. Use `$ARGUMENTS` to identify the run folder. If omitted or `latest`, use the latest run under `applications/`.
-5. Read the run analysis and `profile/resume.md`.
+5. Read the run analysis and the resume variant recorded in `resume_variant` in the run's `metadata.json` (fall back to confirming a variant via `profile/resume-variants.md` if missing).
 6. Write `drafts/cover-letter.md` and, when feasible, `drafts/cover-letter.docx`.
 

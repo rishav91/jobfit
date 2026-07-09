@@ -66,16 +66,28 @@ From the job description (crawled or pasted), extract:
 
 Save as `source/extracted-job.json`.
 
-## Step 4 — Compare Against Resume
+## Step 4 — Select Resume Variant
 
-Read `profile/resume.md`. Inspect `profile/resume-template.docx` or `profile/resume.docx` if present and call out ATS risks:
+Read `profile/resume-variants.md` to see available resume variants and what each is best for.
+
+Match the extracted JD's emphasis (role focus, required skills, domain) against each variant's "Best for" description and propose the closest one, e.g.:
+
+> "This role leans Applied AI (LLM/RAG/agentic work). I'd suggest using the **Applied AI** resume variant (`profile/resume-applied-ai.md`). Proceed with that, or would you like a different variant?"
+
+**Wait for the user to confirm or override before continuing.** Never silently pick a variant. If only one variant exists, still confirm rather than assuming.
+
+Once confirmed, record the chosen file path in `resume_variant` in the run's `metadata.json`.
+
+## Step 5 — Compare Against Resume
+
+Read the confirmed resume variant file. Inspect `profile/resume-template.docx` or `profile/resume.docx` if present and call out ATS risks:
 - tables used for layout
 - text boxes
 - icons or images used as text
 - key info in headers/footers
 - multi-column layouts
 
-## Step 5 — Generate Outputs
+## Step 6 — Generate Outputs
 
 Write to the run folder:
 - `source/job-description.md`

@@ -9,13 +9,14 @@ The user interacts in natural language, not primarily through CLI commands. Help
 1. Accept a job listing URL or pasted JD.
 2. Crawl/render the listing with Playwright when a URL is provided.
 3. Extract company, role, location, responsibilities, requirements, skills, tools, and context.
-4. Compare the extracted job against `profile/resume.md`.
-5. Inspect `profile/resume-template.docx` or `profile/resume.docx` when available for style and ATS risks.
-6. Save the run under `applications/{company-slug}/{role-slug}-{YYYY-MM-DD}/`.
-7. Persist run metadata in `data/jobfit.sqlite`.
-8. Produce a match report, score, and tailoring plan.
-9. Stop for human review before generating final application artifacts.
-10. Generate resume and/or cover letter only after the user explicitly asks.
+4. Propose a resume variant from `profile/resume-variants.md` based on the JD's emphasis, and wait for the user to confirm or override it before comparing.
+5. Compare the extracted job against the confirmed resume variant.
+6. Inspect `profile/resume-template.docx` or `profile/resume.docx` when available for style and ATS risks.
+7. Save the run under `applications/{company-slug}/{role-slug}-{YYYY-MM-DD}/`.
+8. Persist run metadata in `data/jobfit.sqlite`, including the confirmed `resume_variant`.
+9. Produce a match report, score, and tailoring plan.
+10. Stop for human review before generating final application artifacts.
+11. Generate resume and/or cover letter only after the user explicitly asks.
 
 ## Non-Negotiable Rules
 
@@ -34,7 +35,8 @@ The user interacts in natural language, not primarily through CLI commands. Help
 
 ## User Inputs
 
-- `profile/resume.md`: source of truth for factual resume content.
+- `profile/resume-variants.md`: registry of available resume variants (e.g. Backend Architecture, Applied AI) and which to propose for a given JD.
+- `profile/resume-*.md` (e.g. `resume-backend.md`, `resume-applied-ai.md`): source of truth for factual resume content, one file per variant. All variants share the same underlying facts — only framing and emphasis differ.
 - `profile/resume-template.docx` or `profile/resume.docx`: style reference for generated DOCX files.
 - `profile/profile.yml`: name, contact, target roles, preferences.
 
