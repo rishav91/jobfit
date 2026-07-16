@@ -20,6 +20,11 @@ Principal Developer and Tech Lead building production Applied AI systems — age
 
 **APPLIED AI PROJECTS**
 
+**[AgenticGraphComposer](https://github.com/rishav91/AgenticGraphComposer)**
+
+* Visual canvas for designing and editing LangGraph agent flows, with crash-safe run durability via a Postgres-backed checkpointer, OTel tracing for run visibility, and an eval harness that catches regressions before they ship. Published as a pip package ([PyPI](https://pypi.org/project/agentic-graph-composer/)).
+* **Stack:** Python, React, LangGraph, langgraph-checkpoint-postgres, Pydantic, Click, OpenTelemetry
+
 **Blitz — NFL Stats Agent**
 
 * Agentic RAG over NFL play-by-play and roster data — a LangGraph router/retrieval/generation/reflection/HITL graph backed by ChromaDB, with a model-agnostic chat layer. Every LLM call is OTel-traced end-to-end.
